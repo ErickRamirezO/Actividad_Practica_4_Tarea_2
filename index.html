@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <title>Calculadora MVC</title>
+
+  <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+
+    <div class="calculator">
+    <input id="display" class="form-control mb-2" type="text" readonly>
+    <div class="btn-group btn-group-sm w-100" role="group">
+      <button class="btn btn-secondary" onclick="controller.appendToDisplay('7')">7</button>
+      <button class="btn btn-secondary" onclick="controller.appendToDisplay('8')">8</button>
+      <button class="btn btn-secondary" onclick="controller.appendToDisplay('9')">9</button>
+      <button class="btn btn-secondary" onclick="controller.appendToDisplay('/')">/</button>
+    </div>
+    <div style="margin-top:5px;"></div>
+    <div class="btn-group btn-group-sm w-100" role="group">
+      <button class="btn btn-secondary" onclick="controller.appendToDisplay('4')">4</button>
+      <button class="btn btn-secondary" onclick="controller.appendToDisplay('5')">5</button>
+      <button class="btn btn-secondary" onclick="controller.appendToDisplay('6')">6</button>
+      <button class="btn btn-secondary" onclick="controller.appendToDisplay('*')">*</button>
+    </div>
+    <div style="margin-top:5px;"></div>
+    <div class="btn-group btn-group-sm w-100" role="group">
+      <button class="btn btn-secondary" onclick="controller.appendToDisplay('1')">1</button>
+      <button class="btn btn-secondary" onclick="controller.appendToDisplay('2')">2</button>
+      <button class="btn btn-secondary" onclick="controller.appendToDisplay('3')">3</button>
+      <button class="btn btn-secondary" onclick="controller.appendToDisplay('-')">-</button>
+    </div>
+    <div style="margin-top:5px;"></div>
+    <div class="btn-group btn-group-sm w-100" role="group">
+      <button class="btn btn-secondary" onclick="controller.appendToDisplay('0')">0</button>
+      <button class="btn btn-secondary" onclick="controller.clearDisplay()">C</button>
+      <button class="btn btn-secondary" onclick="controller.calculateResult()">=</button>
+      <button class="btn btn-secondary" onclick="controller.appendToDisplay('+')">+</button>
+    </div>
+  </div>
+
+  <script src="model/model.js"></script>
+  <script src="view/view.js"></script>
+  <script src="controller/controller.js"></script>
+
+</body>
+
+</html>
