@@ -12,30 +12,23 @@ body {
 }
 .calculator {
   margin: auto;
-  width: 25%;
+  width: 200px;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  
 }
+
 nav{
-  align-items: center;
-  justify-content: center;
-  display:flex;
-  width: 100%;
-  height: 100px;
   margin-bottom: 100px;
-  background-color: #9ca0b0;
 }
+
 nav h1{
   color: #261b46;
   font-size: 30px;
   margin-left: 55%;
 }
 nav img{
-  width: 10%;
-  height: 100%;
   margin-right: 15%;
 }
 footer {
